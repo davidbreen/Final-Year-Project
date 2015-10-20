@@ -1,4 +1,5 @@
 import tweepy
+import sqlite3
 
 consumer_key ='h6CFLDQq7LTAOganSnNf1dxMU'
 consumer_secret='7w4tadGfTX63xy16ZnrtVMHlstLUJT9nYJ5Byz5MxAh1ATaCj8'
@@ -9,11 +10,15 @@ auth = tweepy.auth.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_secret)
 api = tweepy.API(auth)
 
-'''
-members = api.list_members(screen_name='ballsdotie',slug='Irish rugby players')
-for user in members:
-    print user.screen_name
-'''
+conn = sqlite3.connect('example5.db')
+c = conn.cursor()
+c.execute('''CREATE TABLE IF NOT EXISTS rugby
+          (Name)''')
 
-for member in tweepy.Cursor(api.list_members, 'ballsdotie', 'Irish rugby players').items():
-    print member.screen_name
+for member in tweepy.Cursor(api.list_members, 'ballsdotie', 'irish-rugby-players').items():
+    temp1=member.screen_name
+    temp2 = [(temp1)]
+    c.executemany("INSERT INTO rugby(Name) VALUES (?);" , (temp2,))
+    conn.commit()
+
+conn.close()
