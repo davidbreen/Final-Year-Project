@@ -1,5 +1,6 @@
 import tweepy
 import sqlite3
+import time
 
 consumer_key ='h6CFLDQq7LTAOganSnNf1dxMU'
 consumer_secret='7w4tadGfTX63xy16ZnrtVMHlstLUJT9nYJ5Byz5MxAh1ATaCj8'
@@ -16,25 +17,19 @@ c.execute('''DROP TABLE rugby''')
 c.execute('''CREATE TABLE rugby
           (Name, Friend)''')
 
-for member in tweepy.Cursor(api.list_members, 'ballsdotie', 'irish-rugby-players', count=200).items():
-    temp1=member.screen_name
-    temp2 = [temp1]
-    friend = tweepy.Cursor(api.friends, screen_name =temp1, count=200).items()       
-    i=0
-    while(i<=20):
-        try:
-          u=next(friend).screen_name
-          u1 = [u]
-          print u1
-          print temp2
-          c.executemany("INSERT INTO rugby(Name, Friend) VALUES (?, ?);", [temp2,u1])
-          conn.commit()
-        except tweepy.TweepError:
-          print "Sleep 15mins"  
-          time.sleep(60*15)
-          continue
-        except StopIteration:
-          break
-        i+=1
-
+for page in tweepy.Cursor(api.list_members, 'ballsdotie', 'irish-rugby-players').items():
+    temp1=page.screen_name
+    print temp1
+    friends = tweepy.Cursor(api.friends, screen_name =temp1, count=2000).items()       
+    try:
+        for friend in friends:
+            u=friend.screen_name
+            temp3=[temp1,u]
+            c.executemany("INSERT INTO rugby(Name, Friend) VALUES (?, ?);", [temp3])
+            conn.commit()
+    except tweepy.TweepError:
+        print "Sleep 15mins"  
+        time.sleep(60*15)
+        continue
+ 
 conn.close()
