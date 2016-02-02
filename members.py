@@ -12,7 +12,8 @@ api = tweepy.API(auth)
 
 conn = sqlite3.connect('example5.db')
 c = conn.cursor()
-c.execute('''CREATE TABLE IF NOT EXISTS rugby
+c.execute('''DROP TABLE rugby''')
+c.execute('''CREATE TABLE rugby
           (Name)''')
 
 for member in tweepy.Cursor(api.list_members, 'ballsdotie', 'irish-rugby-players').items():

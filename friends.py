@@ -18,15 +18,12 @@ with open('C:/Users/David/Desktop/fyp/5_rugby_list.txt') as f:
     
 i=0
 while i<len(player):
-    user = tweepy.Cursor(api.friends, screen_name=player[i], count=200).items()
+    user = tweepy.Cursor(api.friends, screen_name=player[i]).items()
     list.write("\nFriends of %s \n" % player[i])
     while True:       
         try:
             u = next(user)
             list.write(u.screen_name +' \n')       
-        except tweepy.TweepError:
-            time.sleep(60 * 15)
-            continue
         except StopIteration:
             break
     i+=1
