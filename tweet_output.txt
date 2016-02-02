@@ -1,0 +1,84 @@
+Name: Jim Gilmore
+Screen-name: gov_gilmore
+Tweet created: 2016-02-01 20:14:05
+Tweet: RT @RedAlert: Congrats, @gov_gilmore, most positively talked about presidential candidate https://t.co/jwvQVDgd81 via @beccaroses https://t…
+Hashtag: []
+Mentions: [{u'id': 418991627, u'indices': [3, 12], u'id_str': u'418991627', u'screen_name': u'RedAlert', u'name': u'Red Alert Politics'}, {u'id': 3021632183L, u'indices': [24, 36], u'id_str': u'3021632183', u'screen_name': u'gov_gilmore', u'name': u'Jim Gilmore'}, {u'id': 1871890856, u'indices': [118, 129], u'id_str': u'1871890856', u'screen_name': u'beccaroses', u'name': u'Rebecca Downs'}]
+Retweeted: False
+Favourited: False
+Location: Richmond, VA
+Time-zone: Eastern Time (US & Canada)
+Geo: None
+//////////////////
+Name: Jim Gilmore
+Screen-name: gov_gilmore
+Tweet created: 2016-02-01 16:31:40
+Tweet: Read Frederick Douglass' papers at the Library of Congress collection - https://t.co/fC3HiQ8ZFj https://t.co/xDzzp6XtRZ
+Hashtag: []
+Mentions: []
+Retweeted: False
+Favourited: False
+Location: Richmond, VA
+Time-zone: Eastern Time (US & Canada)
+Geo: None
+//////////////////
+Name: Jim Gilmore
+Screen-name: gov_gilmore
+Tweet created: 2016-02-01 01:33:25
+Tweet: RT @JoeGLOCK2014: Only one that really knows plight of vets is @gov_gilmore because he is only one running
+Hashtag: []
+Mentions: [{u'id': 2923610044L, u'indices': [3, 16], u'id_str': u'2923610044', u'screen_name': u'JoeGLOCK2014', u'name': u'Joe'}, {u'id': 3021632183L, u'indices': [63, 75], u'id_str': u'3021632183', u'screen_name': u'gov_gilmore', u'name': u'Jim Gilmore'}]
+Retweeted: False
+Favourited: False
+Location: Richmond, VA
+Time-zone: Eastern Time (US & Canada)
+Geo: None
+//////////////////
+Name: Jim Gilmore
+Screen-name: gov_gilmore
+Tweet created: 2016-02-01 01:18:19
+Tweet: RT @BW_React: #GOP: In terms of social opinion @gov_gilmore is on top but @ChrisChristie trails the pack https://t.co/DIURtWNLrN https://t.…
+Hashtag: [{u'indices': [14, 18], u'text': u'GOP'}]
+Mentions: [{u'id': 117218161, u'indices': [3, 12], u'id_str': u'117218161', u'screen_name': u'BW_React', u'name': u'Brandwatch React'}, {u'id': 3021632183L, u'indices': [47, 59], u'id_str': u'3021632183', u'screen_name': u'gov_gilmore', u'name': u'Jim Gilmore'}, {u'id': 1347285918, u'indices': [74, 88], u'id_str': u'1347285918', u'screen_name': u'ChrisChristie', u'name': u'Chris Christie'}]
+Retweeted: False
+Favourited: False
+Location: Richmond, VA
+Time-zone: Eastern Time (US & Canada)
+Geo: None
+//////////////////
+Name: Jim Gilmore
+Screen-name: gov_gilmore
+Tweet created: 2016-01-31 22:23:27
+Tweet: RT @washexaminer: Jim Gilmore N.H. mailer warns voters against letting media decide election https://t.co/0eu0XzZDm9
+Hashtag: []
+Mentions: [{u'id': 27703934, u'indices': [3, 16], u'id_str': u'27703934', u'screen_name': u'washexaminer', u'name': u'Washington Examiner'}]
+Retweeted: False
+Favourited: False
+Location: Richmond, VA
+Time-zone: Eastern Time (US & Canada)
+Geo: None
+//////////////////
+Name: Jim Gilmore
+Screen-name: gov_gilmore
+Tweet created: 2016-01-31 16:53:53
+Tweet: RT @squeakywheelcom: Finally a realistic/unbiased discussion of right wing media/Fox debate story on @CNNReliable @brianstelter.  Thx @Stev…
+Hashtag: []
+Mentions: [{u'id': 21441242, u'indices': [3, 19], u'id_str': u'21441242', u'screen_name': u'squeakywheelcom', u'name': u'Karen Gordon'}, {u'id': 547860279, u'indices': [101, 113], u'id_str': u'547860279', u'screen_name': u'CNNReliable', u'name': u'Reliable Sources'}, {u'id': 14515799, u'indices': [114, 127], u'id_str': u'14515799', u'screen_name': u'brianstelter', u'name': u'Brian Stelter'}, {u'id': 208667872, u'indices': [134, 140], u'id_str': u'208667872', u'screen_name': u'SteveMTalk', u'name': u"Steve Malzberg's Own"}]
+Retweeted: False
+Favourited: False
+Location: Richmond, VA
+Time-zone: Eastern Time (US & Canada)
+Geo: None
+//////////////////
+Name: Jim Gilmore
+Screen-name: gov_gilmore
+Tweet created: 2016-01-30 17:04:13
+Tweet: My 5-point plan for economic growth, https://t.co/pGw0oZMyqn. Do you support simplifying our tax code? #PleaseSayYes
+Hashtag: [{u'indices': [103, 116], u'text': u'PleaseSayYes'}]
+Mentions: []
+Retweeted: False
+Favourited: False
+Location: Richmond, VA
+Time-zone: Eastern Time (US & Canada)
+Geo: None
+//////////////////
