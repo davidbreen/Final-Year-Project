@@ -12,15 +12,13 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_secret)
 api = tweepy.API(auth,wait_on_rate_limit_notify = True)
 
-conn = sqlite3.connect('C:/Users/David/Desktop/fyp/rep.db')
+conn = sqlite3.connect('C:/Users/David/Desktop/fyp/senators.db')
 c = conn.cursor()
-c.execute('''DROP TABLE info''')
+#c.execute('''DROP TABLE info''')
 c.execute('''CREATE TABLE info
           (Name, Friend)''')
-j=0
-for page in tweepy.Cursor(api.list_members, 'CSPAN', 'u-s-representatives', count=200).items():
-    if j==41:
-        break
+
+for page in tweepy.Cursor(api.list_members, 'cspan', 'senators', count=200).items():
     temp1=page.screen_name
     print temp1
     sys.stdout.flush()
@@ -38,6 +36,7 @@ for page in tweepy.Cursor(api.list_members, 'CSPAN', 'u-s-representatives', coun
         print "Sleep 15mins"
         sys.stdout.flush()
         time.sleep(60*15)
-    j+=1
+        continue
+ 
 
 conn.close()

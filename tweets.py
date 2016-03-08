@@ -2,6 +2,7 @@ import tweepy
 import sqlite3
 import time
 import sys
+import mmap
 from collections import Counter
 consumer_key ='h6CFLDQq7LTAOganSnNf1dxMU'
 consumer_secret='7w4tadGfTX63xy16ZnrtVMHlstLUJT9nYJ5Byz5MxAh1ATaCj8'
@@ -12,7 +13,7 @@ auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_secret)
 api = tweepy.API(auth,wait_on_rate_limit_notify = True)
 
-conn = sqlite3.connect('C:/Users/David/Desktop/fyp/presidents.db')
+conn = sqlite3.connect('C:/Users/David/Desktop/fyp/senators.db')
 c = conn.cursor()
 
 select=c.execute("SELECT Name FROM info")
@@ -21,26 +22,23 @@ newlist=[]
 for i in every_name:
   if i[0] not in newlist:
     newlist.append(i[0])
-p=0
 i=0
-hashtags = []
-for i in range(0,1):
-    for tweet in tweepy.Cursor(api.user_timeline, screen_name=newlist[i]).items():
-        #temp= item.entities.get('hashtags')
-        #hashtags.append(temp)
-        #print hashtags
-        print "Name:", tweet.author.name.encode('utf8')
-        print "Screen-name:", tweet.author.screen_name.encode('utf8')
-        print "Tweet created:", tweet.created_at
-        print "Tweet:", tweet.text.encode('utf8')
-        print "Hashtag:", tweet.entities.get('hashtags')
-        print "Mentions:", tweet.entities.get('user_mentions')
-        print "Retweeted:", tweet.retweeted
-        print "Favourited:", tweet.favorited
-        print "Location:", tweet.user.location.encode('utf8')
-        print "Time-zone:", tweet.user.time_zone
-        print "Geo:", tweet.geo
-        print "//////////////////"
-
-#count = Counter([d['text'] for d in hashtags])
-#print(count.most_common())
+count=0
+for i in range(0,len(newlist)):
+  try:
+    for tweet in tweepy.Cursor(api.user_timeline, screen_name=newlist[i], count=200).items(20):
+        with open("C:/Users/David/Desktop/fyp//outSen.txt", "a") as text_file:
+          text_file.write("Name: ")
+          text_file.write(tweet.author.name.encode('utf8'))
+          text_file.write("--->")
+          text_file.write(tweet.text.encode('utf8'))
+          text_file.write("\n")
+        count+=1
+        sys.stdout.flush()
+        print count
+        sys.stdout.flush()
+  except tweepy.TweepError:
+      print "Sleep 15mins"
+      sys.stdout.flush()
+      time.sleep(60*15)
+      continue     

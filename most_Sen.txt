@@ -1,0 +1,3 @@
+RT = [('ImmigrationGOP', 11), ('SenateMajLdr', 10), ('SenJohnMcCain', 5), ('SenSanders', 4), ('EnergyDems', 3), ('GOPHELP', 2), ('reviewjournal', 2), ('NatWICAssoc', 2), ('JPFreire', 2), ('rareliberty', 2)]
+Mentions= [('POTUS', 19), ('SenateMajLdr', 17), ('SenJohnBarrasso', 15), ('SenatorCantwell', 14), ('lisamurkowski', 12), ('ImmigrationGOP', 11), ('SenatorCardin', 11), ('ErnestMoniz', 10), ('CPAC', 10), ('ENERGY', 9)]
+Hashtags= [('SCOTUS', 61), ('DoYourJob', 42), ('SASC', 20), ('CARA', 16), ('idpol', 14), ('StopTheSham', 14), ('veterans', 12), ('CPAC2016', 12), ('mtpol', 11), ('NoHearingsNoVotes', 11)]

@@ -1,0 +1,3 @@
+RT = [('FineGael', 84), ('fiannafailparty', 56), ('DubLoony', 32), ('eirenewsnetwork', 28), ('kclr96fm', 20), ('EndaKennyTD', 20), ('RTEdubNORTHWEST', 16), ('sinnfeinireland', 16), ('Tfitzgeraldcork', 16), ('Fingalcoco', 16)]
+Mentions = [('FineGael', 192), ('fiannafailparty', 124), ('labour', 96), ('FineGaelMayo', 68), ('EricByrneTD', 56), ('RichardbrutonTD', 52), ('EndaKennyTD', 52), ('JoanCollinsTD', 52), ('PadraigMacL', 48), ('sinnfeinireland', 44)]
+Hashtags = [('GE16', 624), ('ge16', 136), ('IBackJohnOMahonyTD', 36), ('NAMA', 36), ('LP16', 36), ('Wexford', 32), ('Waterford', 28), ('GE2016', 28), ('dubw', 28), ('AllianzLeagues', 24)]

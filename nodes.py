@@ -2,7 +2,7 @@ import sqlite3
 import gexf
 import networkx as nx
 G=nx.Graph()
-conn = sqlite3.connect('C:/Users/David/Desktop/fyp/presidents.db')
+conn = sqlite3.connect('C:/Users/David/Desktop/fyp/TDs.db')
 c = conn.cursor()
 select=c.execute("SELECT Name FROM info")
 every_name = select.fetchall()
@@ -23,6 +23,6 @@ for each in newlist:
             if item[1] in newlist:
                 G.add_edge(item[1], each)
 
-nx.write_gexf(G, "C:/Users/David/Desktop/fyp/nodes.gexf")         
+nx.write_gexf(G, "C:/Users/David/Desktop/fyp/tds.gexf")         
     
     
